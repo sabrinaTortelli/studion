@@ -98,7 +98,7 @@ ul{
 
 .slide{
     position: relative;
-    height: calc(100vh - 7.75rem);
+    height: calc(95vh - 7.75rem);
 }
 
 .slide__background-image {
@@ -144,11 +144,19 @@ ul{
     transition: 0.5s all ease;/*transição de mudança de foco tempo: 0.5s all-p/todos ease:curva de animação mais balanceada */
 }
 
-.btn:hover, .btn:active, .btn:focus, .btn--institucional{
+.btn:hover, .btn:active, .btn:focus{
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    color:#fff;
+    box-shadow: 0 1rem 1rem var(--color-copy);
+}
+
+.btn--institucional{
     border-color: var(--color-primary);
     background-color: var(--color-primary);
     color:#fff;
 }
+
 
 #counter{
     background-color: var(--color-primary);
@@ -212,6 +220,7 @@ ul{
 .btn--institucional:hover{
     color: var(--color-copy);
     background: unset;
+    
 }
 
 .quote{
